@@ -3,18 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DOM manipulation example</title>
+    <title>My Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-    <h1>Welcome to our gallery</h1>
-    <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+    <header>
+        <h1 class="title">Welcome to our gallery</h1>
+    </header>
+    <main>
+        <p>Hover on any thumbnail to see it bigger</p>
+        <div id="thumb-bar">
+            <img src='images/pic1.jpg' title='Baby' alt='image 1' height='80'>
+            <img src='images/pic2.jpg' title='Art' alt='image 2' height='80'>
+            <img src='images/pic3.jpg' title='Flower' alt='image 3' height='80'>
+            <img src='images/pic4.jpg' title='Egypt' alt='image 4' height='80'>
+            <img src='images/pic5.jpg' title='Butterfly' alt='image 5' height='80'>
+        </div>
+        <img class="displayed-img">
+        <div class="user_input">
+            <label>What effect do you want to apply?</label>
+            <input id="effect" type="text">
+            <button>Submit</button>
+        </div>
+    </main>
 </body>
 
 </html>
