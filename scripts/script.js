@@ -1,8 +1,8 @@
-user_input = document.querySelector(".user_input");
-thumb_bar = document.querySelector("#thumb-bar");
-displayed_img = document.querySelector(".displayed-img");
-submit = document.querySelector(".submit");
-effect = document.querySelector("#effect");
+let user_input = document.querySelector(".user_input");
+let thumb_bar = document.querySelector("#thumb-bar");
+let displayed_img = document.querySelector(".displayed-img");
+let submit = document.querySelector(".submit");
+let effect = document.querySelector("#effect");
 
 function display_img () {
     let imgs = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
@@ -18,7 +18,7 @@ function display_img () {
 
 function hovered_img (e) {
     if (e.target.tagName === "IMG") {
-        img = e.target
+        let img = e.target
         displayed_img.setAttribute("src", img.src);
         displayed_img.setAttribute("title", img.title);
         displayed_img.setAttribute("alt", img.alt);
@@ -28,7 +28,7 @@ function hovered_img (e) {
 
 function blur () {
     if (effect.value.toLowerCase() === "blur") {
-        img_num = displayed_img.alt.substring(6, 7);
+        let img_num = displayed_img.alt.substring(6, 7);
         displayed_img.src = `images/pic${img_num}B.jpg`;
     } else {
         alert(`Invalid effect: ${effect.value}`);
